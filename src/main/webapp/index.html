@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>JSP - Hello World</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/app.css">
+</head>
+<body>
+<div th:replace="fragments/wrapper.html::dashboardHeader"></div>
+<div class="fcmb-dashboard-header">
+    <h3 class="fcmb-dashboard-logo">Dashboard</h3>
+</div>
+<div class="fcmb-empty-space"></div>
+<div class="fcmb-body-section">
+   <div class="fcmb-dashboard-timeline-container">
+       <h6 class="fcmb-dashboard-body-section-indication-heading"> Showing Data For Last: </h6>
+       <div class="fcmb-dashboard-timeline">
+           <h2 class="timeline-active">15 Mins</h2>
+           <h2 class="timeline">2 hrs</h2>
+           <h2 class="timeline">24 hrs</h2>
+           <h2 class="timeline">1 Weeks</h2>
+           <h2 class="timeline">2 weeks</h2>
+           <h2 class="timeline">1 month</h2>
+           <h2 class="timeline">3 Months</h2>
+       </div>
+   </div>
+    <div class="fcmb-dashboard-stats-card-container">
+        <div class="fcmb-dashboard-stats-card-1">
+            <h2 class="card-1-title">Success Rate</h2>
+            <h2 class="card-1-value">97.78%</h2>
+        </div>
+        <div class="fcmb-dashboard-stats-card-2">
+            <h2 class="card-2-title">Volume</h2>
+            <h2 class="card-2-value">70</h2>
+            <h2 class="card-2-subtitle">5 per Minute</h2>
+        </div>
+        <div class="fcmb-dashboard-stats-card-3">
+            <h2 class="card-3-title">Value</h2>
+            <h2 class="card-3-value">N3,045,985.00</h2>
+        </div>
+        <div class="fcmb-dashboard-stats-card-4">
+            <h2 class="card-3-title">Income</h2>
+            <h2 class="card-3-value">N70.10</h2>
+        </div>
+        <div class="fcmb-dashboard-stats-card-5">
+            <div class="card-5-inner-1">
+                <h2 class="card-5-inner-1-title">Active Agents</h2>
+                <h4 class="card-5-inner-1-value">1000</h4>
+            </div>
+            <div class="card-5-inner-2">
+                <h2 class="card-5-inner-1-title">Inactive: <strong>34</strong></h2>
+                <h2 class="card-5-inner-1-value">Deactivated: <strong><span style="color: red">4</span></strong></h2>
+            </div>
+        </div>
+    </div>
+    <div class="fcmb-dashboard-chart">
+        <div class="fcmb-dashboard-chart-left">
+            <h2 class="fcmb-dashboard-transaction-insight-text">Transaction Insights</h2>
+            <div class="fcmb-dashboard-chart-left-bullets">
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-blue"></span>
+                    <h2 class="bullet-text">Total Txns</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-success"></span>
+                    <h2 class="bullet-text">Success</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-failure"></span>
+                    <h2 class="bullet-text">Failure</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-purple"></span>
+                    <h2 class="bullet-text">Users</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-warning"></span>
+                    <h2 class="bullet-text">Terminals</h2>
+                </div>
+
+            </div>
+            <div class="" style="padding-top: 50px">
+                <img src="asset/image/Lines.png" alt="">
+            </div>
+        </div>
+        <div  class="fcmb-dashboard-chart-left">
+            <h2 class="fcmb-dashboard-transaction-insight-text">Transactions Per Period</h2>
+            <div class="fcmb-dashboard-chart-left-bullets">
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-success"></span>
+                    <h2 class="bullet-text">Online: <strong>125</strong></h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-failure"></span>
+                    <h2 class="bullet-text">Offline: 2675</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-purple"></span>
+                    <h2 class="bullet-text">Aggregator: <strong>0</strong></h2>
+                </div>
+            </div>
+            <div style="padding-top: 30px">
+                <div class="fcmb-dashboard-chart-left-bullets">
+                    <div class="fcmb-dashboard-chart-left-bullets-1">
+                        <span class="fcmb-dashboard-chart-left-bullets-warning"></span>
+                        <h2 class="bullet-text">Previous Week</h2>
+                    </div>
+                    <div class="fcmb-dashboard-chart-left-bullets-1">
+                        <span class="fcmb-dashboard-chart-left-bullets-purple"></span>
+                        <h2 class="bullet-text">Current Week</h2>
+                    </div>
+            </div>
+                <div class="" style="padding-top: 30px">
+                    <img src="asset/image/Lines.png" alt="">
+                </div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="pie-chart-container">
+        <div style="padding-top: 18px">
+            <div class="fcmb-dashboard-chart-left-bullets">
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-success"></span>
+                    <h2 class="bullet-text">Successful</h2>
+                </div>
+                <div class="fcmb-dashboard-chart-left-bullets-1">
+                    <span class="fcmb-dashboard-chart-left-bullets-failure"></span>
+                    <h2 class="bullet-text">Failed</h2>
+                </div>
+            </div>
+    </div>
+        <div class="pie-chart-container-inner">
+            <div style="padding-top: 20px">
+                <h2 class="pie-chart-container-inner-text">Deposits</h2>
+                <img src="asset/image/Ellipse%202323.png" alt="">
+            </div>
+            <div style="padding-top: 20px">
+                <h2 class="pie-chart-container-inner-text">Withdrawals(not on us)</h2>
+                <img src="asset/image/Ellipse%202323.png" alt="">
+            </div>
+            <div style="padding-top: 20px">
+                <h2 class="pie-chart-container-inner-text">Withdrawals(on us)</h2>
+                <img src="asset/image/Ellipse%202323.png" alt="">
+            </div>
+            <div style="padding-top: 20px">
+                <h2 class="pie-chart-container-inner-text">Withdrawals(on us)</h2>
+                <img src="asset/image/Ellipse%202323.png" alt="">
+            </div>
+            <div style="padding-top: 20px">
+                <h2 class="pie-chart-container-inner-text">Withdrawals(on us)</h2>
+                <img src="asset/image/Ellipse%202323.png" alt="">
+            </div>
+        </div>
+
+</div>
+    <div class="line-graph-container">
+        <div class="line-graph-container-inner">
+            <h6 class="line-graph-container-text">Low Ticket Transactions 0-5000</h6>
+            <h2 class="line-graph-container-value">a</h2>
+            <img src="asset/image/Lines.png" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
